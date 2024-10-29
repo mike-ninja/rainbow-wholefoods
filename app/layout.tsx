@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Inter, Noto_Serif } from "next/font/google";
 import "./globals.css";
+import { NavBar } from "@/components";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+  weight: ["100", "400", "700", "900"],
+});
+
+const noto_serif = Noto_Serif({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-noto_serif",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,8 +42,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${noto_serif.variable} antialiased relative`}
       >
+        <NavBar />
         {children}
       </body>
     </html>
