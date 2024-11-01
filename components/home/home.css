@@ -1,0 +1,27 @@
+.embla {
+  @apply overflow-hidden relative;
+}
+
+.embla_container {
+  @apply flex pl-6;
+}
+
+/* .embla_container { */
+/*   grid-auto-columns: 33%; */
+/* } */
+
+.embla_slide {
+  @apply flex-[0_0_33%];
+}
+
+.embla_buttons {
+  @apply text-6xl text-gray absolute top-1/2 -translate-y-1/2;
+}
+
+.embla_next {
+  @apply embla_buttons right-0;
+}
+
+.embla_prev {
+  @apply embla_buttons left-0;
+}
