@@ -31,9 +31,9 @@ export default function HomeAbout() {
             <GridImage {...images[2]} />
           </div>
         </div>
-        <div className="py-20">
-          <h2 className="title text-2xl text-gray mb-7">About us</h2>
-          <p className="text-gray">
+        <div className="py-20 text-gray">
+          <h2 className="column_title">About us</h2>
+          <p>
             Rainbow Wholefoods was established in 2000 and has become one of the
             best health food shops for people who want to live and maintain a
             healthy lifestyle. In January 2021, we relocated from our shop on

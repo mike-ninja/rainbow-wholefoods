@@ -1,24 +1,26 @@
 import Image from "next/image";
-import { Fragment } from "react";
+import Link from "next/link";
 
-type HomeProductsProps = {
-  catogeries: {
-    name: string;
-    tags: string[];
-    icon: {
-      src: string;
-      alt: string;
-    };
-  }[];
+type ProductCategory = {
+  name: string;
+  tags: string;
+  icon: {
+    src: string;
+    alt: string;
+  };
 };
 
-export default function HomeProducts({ catogeries }: HomeProductsProps) {
+type HomeProductsProps = {
+  categories: ProductCategory[];
+};
+
+export default function HomeProducts({ categories }: HomeProductsProps) {
   return (
     <section className="bg-accent">
-      <div className="container container_padding ">
-        <h2 className="text-gray text-center text-6xl mb-6">Our Products</h2>
-        <div className="grid grid-cols-3 gap-x-16 gap-y-6 max-w-[1250px] mx-auto">
-          {catogeries.map((category, index) => (
+      <div className="container container_padding flex flex-col items-center">
+        <h2 className="text-gray text-center text-6xl">Our Products</h2>
+        <div className="grid grid-cols-3 gap-x-16 gap-y-6 max-w-[1250px] mx-auto my-8">
+          {categories.map((category, index) => (
             <div
               key={index}
               className="bg-white w-[350px] px-8 py-6 mx-auto flex flex-col items-center justify-center"
@@ -36,6 +38,9 @@ export default function HomeProducts({ catogeries }: HomeProductsProps) {
             </div>
           ))}
         </div>
+        <Link href="/" className="button_primary">
+          Our Products
+        </Link>
       </div>
     </section>
   );

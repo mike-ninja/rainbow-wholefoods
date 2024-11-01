@@ -24,22 +24,28 @@ body {
 }
 
 header,
+footer,
 section {
   @apply flex justify-center;
 }
 
-.button_padding {
-  @apply px-6 py-2;
-}
-
-.button_font {
-  @apply font-semibold;
-}
-
 .button {
-  @apply bg-secondary_three button_padding;
+  @apply px-6 py-2 w-fit font-semibold uppercase;
+}
+
+.button_primary {
+  @apply button bg-primary_one rounded-md text-white;
 }
 
 .container_padding {
   @apply py-24;
+}
+
+/* Titles */
+.section_title {
+  @apply text-4xl mb-5;
+}
+
+.column_title {
+  @apply text-3xl mb-5;
 }

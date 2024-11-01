@@ -9,7 +9,7 @@ export default function HomeLanding() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
           dignissim egestas magna, vitae aliquet lorem laoreet sit amet.
         </h2>
-        <Link href="/" className="button rounded-md uppercase mt-36">
+        <Link href="/" className="button_primary mt-36">
           Our Products
         </Link>
       </div>
