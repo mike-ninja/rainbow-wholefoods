@@ -4,7 +4,7 @@ export default function HomeCta() {
   return (
     <section className="bg-secondary_two">
       <div className="container container_padding grid grid-cols-2">
-        <div className="bg-white h-[350px] px-20 flex flex-col justify-center my-auto w-[120%] z-10">
+        <div className="bg-white z-10 w-[190%] md:w-[167%] lg:w-[144%] xl:w-[128%] py-16 my-12 px-7 sm:px-12 flex flex-col justify-center ">
           <h3 className="text-primary_one column_title">
             Free Naturopathic Consultations
           </h3>
@@ -19,7 +19,7 @@ export default function HomeCta() {
             Contact Us
           </Link>
         </div>
-        <div className="bg-[url('@/public/cta-bg.jpg')] bg-cover bg-center h-[550px]" />
+        <div className="bg-[url('@/public/cta-bg.jpg')] bg-cover bg-center" />
       </div>
     </section>
   );

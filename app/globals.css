@@ -29,6 +29,10 @@ section {
   @apply flex justify-center;
 }
 
+.title {
+  @apply noto_serif;
+}
+
 .button {
   @apply px-6 py-2 w-fit font-semibold uppercase;
 }
@@ -38,7 +42,7 @@ section {
 }
 
 .container_padding {
-  @apply py-24;
+  @apply py-12 md:py-16 lg:py-24;
 }
 
 /* Titles */

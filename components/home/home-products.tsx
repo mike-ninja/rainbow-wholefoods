@@ -37,9 +37,9 @@ export default function HomeProducts({ categories }: HomeProductsProps) {
     <section className="bg-accent">
       <div className="container container_padding flex flex-col items-center bg-opacity-0">
         <h2 className="text-gray text-center text-6xl">Our Products</h2>
-        <div className="embla">
-          <div ref={emblaRef} className="embla_viewport">
-            <div className="embla_container max-w-[1250px] mx-auto my-8">
+        <div className="embla w-full">
+          <div ref={emblaRef}>
+            <div className="embla_container mx-auto my-8">
               {categories.map((category, index) => (
                 <div key={index} className="embla_slide">
                   <div className="w-[90%] h-full bg-white px-8 py-6 mx-auto flex flex-col items-center justify-center">
@@ -55,6 +55,12 @@ export default function HomeProducts({ categories }: HomeProductsProps) {
                     <p className="text-gray text-sm text-center">
                       {category.tags}
                     </p>
+                    <Link
+                      href="/"
+                      className="text-gray title underline mt-4 hover:italic"
+                    >
+                      Shop Now
+                    </Link>
                   </div>
                 </div>
               ))}

@@ -6,12 +6,12 @@ import { fakeProductCategories } from "@/lib/data";
 export default function Home() {
   return (
     <>
-      {/* <HomeLanding /> */}
+      <HomeLanding />
       <HomeAbout />
-      {/* <HomeProducts categories={fakeProductCategories} /> */}
-      {/* <HomeCta /> */}
-      {/* <HomeMedia /> */}
-      {/* <ContactForm /> */}
+      <HomeProducts categories={fakeProductCategories} />
+      <HomeCta />
+      <HomeMedia />
+      <ContactForm />
     </>
   );
 }

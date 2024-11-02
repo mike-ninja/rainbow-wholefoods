@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="fixed top-0 left-0 w-full flex justify-between items-center">
+    <div className="z-50 fixed top-0 left-0 w-full flex justify-between items-center">
       <div className="py-4 ml-4">
         <Image
           src="/logo.svg"
@@ -13,14 +13,15 @@ export default function NavBar() {
           height={75}
         />
       </div>
-      <div className="flex gap-1">
+      <div className="flex gap-5 px-3 text-gray sm:text-lg">
         {navBarOptions.map((option, index) => (
           <Link
             key={index}
             href={option.link}
-            className="button_padding button_font"
+            className="group button_padding button_font"
           >
             {option.title}
+            <hr className="w-0 group-hover:w-full transition" />
           </Link>
         ))}
       </div>

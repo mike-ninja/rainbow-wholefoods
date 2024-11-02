@@ -11,7 +11,7 @@
 /* } */
 
 .embla_slide {
-  @apply flex-[0_0_33%];
+  @apply flex-[0_0_80%] md:flex-[0_0_70%] xl:flex-[0_0_33%];
 }
 
 .embla_buttons {

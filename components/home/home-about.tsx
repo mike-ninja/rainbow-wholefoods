@@ -21,13 +21,13 @@ export default function HomeAbout() {
       <div className="container container_padding">
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="absolute inset-0 lg:static grid grid-cols-2 grid-rows-2 gap-6">
-            <div className="relative backdrop-brightness-75">
+            <div className="relative">
               <GridImage {...images[0]} />
             </div>
-            <div className="relative row-span-2 backdrop-brightness-75">
+            <div className="relative row-span-2">
               <GridImage {...images[1]} />
             </div>
-            <div className="relative backdrop-brightness-75">
+            <div className="relative">
               <GridImage {...images[2]} />
             </div>
           </div>
@@ -64,5 +64,10 @@ type GridImageProps = {
 };
 
 function GridImage({ src, alt }: GridImageProps) {
-  return <Image src={src} alt={alt} fill className="object-cover" />;
+  return (
+    <>
+      <div className="absolute lg:hidden inset-0 bg-black/20 z-10" />
+      <Image src={src} alt={alt} fill className="object-cover" />;
+    </>
+  );
 }
