@@ -18,7 +18,7 @@ export default function ContactForm() {
           //   }
           //   toast.success("Email sent successfully");
           // }}
-          className="flex flex-col gap-2 w-[min(100%,40rem)] mx-auto"
+          className="flex flex-col gap-2 w-[min(90%,40rem)] mx-auto"
         >
           <input
             required
