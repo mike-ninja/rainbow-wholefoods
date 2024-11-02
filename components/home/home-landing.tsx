@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HomeLanding() {
   return (
-    <header className="relative bg-[url('@/public/landing-bg.jpg')] bg-cover bg-center h-dvh text-white">
+    <header className="relative bg-[url('/landing-bg.jpg')] bg-cover bg-center h-dvh text-white">
       <div className="absolute inset-0 bg-black/10" />
       <div className="z-10 container flex flex-col justify-center items-center">
         <h1 className="noto_serif text-center font-bold text-6xl">

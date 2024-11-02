@@ -19,7 +19,7 @@ export default function HomeCta() {
             Contact Us
           </Link>
         </div>
-        <div className="bg-[url('@/public/cta-bg.jpg')] bg-cover bg-center" />
+        <div className="bg-[url('/cta-bg.jpg')] bg-cover bg-center" />
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomeMedia() {
   return (
-    <section className="bg-[url('@/public/media-bg.jpg')] bg-cover bg-center overflow-hidden">
+    <section className="bg-[url('/media-bg.jpg')] bg-cover bg-center overflow-hidden">
       <div className="container relative container_padding">
         <Image
           src="/media-play.svg"
