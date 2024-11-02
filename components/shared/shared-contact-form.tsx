@@ -1,7 +1,9 @@
 export default function ContactForm() {
-  const inputClassName = "bg-secondary_two px-2 py-1";
+  const inputClassName =
+    "bg-secondary_one px-2 py-1 border-gray border-[1px] border-opacity-80";
+
   return (
-    <section>
+    <section className="bg-secondary_two">
       <div className="container container_padding">
         <h2 className="section_title text-primary_one text-center">
           Contact Us

@@ -87,6 +87,6 @@ export const socials = [
   {
     title: "Facebook",
     icon: React.createElement(RiFacebookFill),
-    href: "https://www.instagram.com/ics_conferences/",
+    href: "https://www.facebook.com/rainbowwholefoodsaustralia/",
   },
 ] as const;

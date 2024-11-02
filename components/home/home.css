@@ -3,7 +3,7 @@
 }
 
 .embla_container {
-  @apply flex pl-6;
+  @apply flex;
 }
 
 /* .embla_container { */
